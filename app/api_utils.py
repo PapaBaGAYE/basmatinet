@@ -57,7 +57,7 @@ class BasmatinetPrediction():
                     'probability': proba}
         return response
 
-    def inference_pipeline(self, image_b64):
+    def inference_pipeline(self, list_images_b64_requests):
         # Load the image
         image = self._load_image(image_b64)
         # Preprocess it
